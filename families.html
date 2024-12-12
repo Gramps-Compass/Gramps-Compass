@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head dir="ltr" lang="en">
+	<title>My Family Compass - Families</title>
+	<meta charset="UTF-8" />
+	<meta name ="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=10.0, user-scalable=yes" />
+	<meta name ="apple-mobile-web-app-capable" content="yes" />
+	<meta name="generator" content="Gramps AIO64-5.2.3-r1-aa03f5a http://gramps-project.org/" />
+	<meta name="author" content="" />
+	<meta name="robots" content="noindex" />
+	<meta name="googlebot" content="noindex" />
+	<link href="images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="css/ancestortree.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
+	<link href="css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/Basic-Ash.css" media="screen" rel="alternate stylesheet" title="Basic-Ash" type="text/css" />
+	<link href="css/Basic-Blue.css" media="screen" rel="alternate stylesheet" title="Basic-Blue" type="text/css" />
+	<link href="css/Basic-Cypress.css" media="screen" rel="alternate stylesheet" title="Basic-Cypress" type="text/css" />
+	<link href="css/Basic-Lilac.css" media="screen" rel="alternate stylesheet" title="Basic-Lilac" type="text/css" />
+	<link href="css/Basic-Peach.css" media="screen" rel="alternate stylesheet" title="Basic-Peach" type="text/css" />
+	<link href="css/Basic-Spruce.css" media="screen" rel="alternate stylesheet" title="Basic-Spruce" type="text/css" />
+	<link href="css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
+	<link href="css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
+	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+
+<script type="text/javascript">
+function toggleContent(elem, icon) {
+  // Get the DOM reference
+  var contentId = document.getElementById(elem);
+  var icon = document.getElementById(icon);
+  // Toggle
+  if (contentId.style.display == "block") {
+    contentId.style.display = "none";
+    icon.className = 'icon icon-close';
+  } else {
+    contentId.style.display = "block";
+    icon.className = 'icon icon-open';
+  };
+}
+</script>
+
+</head>
+<body dir="ltr">
+	<div id="outerwrapper">
+		<div class="ltr" id="header">
+			<button href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</button>
+			<h1 class="nav" id="SiteTitle">My Family Compass</h1>
+		</div>
+		<div class="wrappernav ltr" id="nav" role="navigation">
+			<div class="container">
+				<ul class="nav dropmenu" id="dropmenu">
+					<li><a href="individuals.html" title="Individuals">Individuals</a></li>
+					<li><a href="index.html" title="Surnames">Surnames</a></li>
+					<li class = "CurrentSection"><a href="families.html" title="Families">Families</a></li>
+					<li><a href="events.html" title="Events">Events</a></li>
+					<li><a href="places.html" title="Places">Places</a></li>
+					<li><a href="updates.html" title="Updates">Updates</a></li>
+					<li><a href="statistics.html" title="Statistics">Statistics</a></li>
+					<li><a href="cal/2024/index.html" title="Web Calendar">Web Calendar</a></li>
+					<li><a onclick="history.go(-1);">Previous</a></li>
+					<li><a onclick="history.go(+1);">Next</a></li>
+				</ul>
+			</div>
+		</div>
+		<button id="gototop" onclick="GoToTop()" title="Go to top">
+			<svg class="triangle" viewBox="0 0 100 100">
+				<polygon points="0,100 100,100, 50,10">
+				</polygon>
+			</svg>
+		</button>
+	
+<script>
+//Get the button
+var gototop = document.getElementById("gototop");
+
+// When the user scrolls down 200px from the top of the document,
+// show the button
+window.onscroll = function() {scroll()};
+
+function scroll() {
+  if (document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200) {
+    gototop.style.display = "block";
+  } else {
+    gototop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function GoToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+		<div class="content" id="Relationships">
+			<p id="description">
+			This page contains an index of all the families/ relationships in the database, sorted by their family name/ surname. Clicking on a person&#8217;s name will take you to their family/ relationship&#8217;s page.
+			</p>
+			<div id="ltr">
+				<ul class="ltr">
+					<li><a href="#A" title="Alphabet Menu: A">A</a></li>
+					<li><a href="#B" title="Alphabet Menu: B">B</a></li>
+					<li><a href="#D" title="Alphabet Menu: D">D</a></li>
+					<li><a href="#J" title="Alphabet Menu: J">J</a></li>
+					<li><a href="#L" title="Alphabet Menu: L">L</a></li>
+					<li><a href="#M" title="Alphabet Menu: M">M</a></li>
+					<li><a href="#N" title="Alphabet Menu: N">N</a></li>
+					<li><a href="#O" title="Alphabet Menu: O">O</a></li>
+					<li><a href="#V" title="Alphabet Menu: V">V</a></li>
+					<li><a href="#W" title="Alphabet Menu: W">W</a></li>
+				</ul>
+			</div>
+			<table class="infolist relationships ltr">
+				<thead>
+					<tr>
+						<th class="ColumnRowLabel">Letter</th>
+						<th class="ColumnPartner">Person</th>
+						<th class="ColumnPartner">Family</th>
+						<th class="ColumnDate">Marriage</th>
+						<th class="ColumnDate">Divorce</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="A" name="A" title="Families beginning with letter A">
+							A
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/f/1/fc55937ce1219cc94f00517141f.html">Akombe, Akombe</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/5/d/fc55933453e18f4cc518decafd5.html" title="Family of Wambia, Wambia and Akombe, Akombe">
+							Family of Wambia, Wambia and Akombe, Akombe
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/8/b/fc5587b70be50cb4cc9c41306b8.html">Manyasa Akwera, Razia</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/b/3/fc55876fde64701bad603e3e43b.html" title="Family of Ominde Musungu, billy and Manyasa Akwera, Razia">
+							Family of Ominde Musungu, billy and Manyasa Akwera, Razia
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="B" name="B" title="Families beginning with letter B">
+							B
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/c/a/fc558691fb25409228837dfbeac.html">Baba lyon, Lazarus</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/8/6/fc55868cf751eb130e20958268.html" title="Family of Baba lyon, Lazarus and Ominde Ndakala, Slyvia">
+							Family of Baba lyon, Lazarus and Ominde Ndakala, Slyvia
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="D" name="D" title="Families beginning with letter D">
+							D
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/e/a/fc5583baeda1d7c6c4a1f3896ae.html">Dindi Dindi, Veros Husband</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/9/7/fc5583b5cf842ee24944d74d379.html" title="Family of Dindi Dindi, Veros Husband and Andrew Veronica, Veronica">
+							Family of Dindi Dindi, Veros Husband and Andrew Veronica, Veronica
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/5/2/fc5584ebdfe26c9d47109ef0c25.html">Julia Dindi, John</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/d/6/fc5585339177cdc004e8fe1e96d.html" title="Family of Julia Dindi, John and Newtons Mum, Everlyn">
+							Family of Julia Dindi, John and Newtons Mum, Everlyn
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+						&nbsp;
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/1/2/fc55d40264f333f7f53201c7221.html" title="Family of Julia Dindi, John and Mama ya Ako, Betty">
+							Family of Julia Dindi, John and Mama ya Ako, Betty
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="J" name="J" title="Families beginning with letter J">
+							J
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/6/4/fc55b8a79ae53d1b110f3dcf246.html">Janet, Janet</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/8/6/fc55b9c93d7c27ef9d6f87ce68.html" title="Family of Janet, Janet">
+							Family of Janet, Janet
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+						&nbsp;
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/7/8/fc55ba900c0fc6bd7fee690287.html" title="Family of Janet, Janet">
+							Family of Janet, Janet
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="L" name="L" title="Families beginning with letter L">
+							L
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/a/0/fc55bb136ad28d700b090f51a0a.html">Lilian, Mama Omosh</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/8/5/fc55bb967327dae1d50c128b058.html" title="Family of Lilian, Mama Omosh">
+							Family of Lilian, Mama Omosh
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="M" name="M" title="Families beginning with letter M">
+							M
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/c/b/fc55d42197562502b80b41f29bc.html">Mama ya Ako, Betty</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/1/2/fc55d40264f333f7f53201c7221.html" title="Family of Julia Dindi, John and Mama ya Ako, Betty">
+							Family of Julia Dindi, John and Mama ya Ako, Betty
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/d/9/fc55927ad1fb00108928ae6a9d.html">Mukoma, Mukoma</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/3/8/fc55925d7eda98724d144d2083.html" title="Family of Mukoma, Mukoma">
+							Family of Mukoma, Mukoma
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/5/3/fc55818632820ce89cf8000aa35.html">Musungu Musungu, Joseph</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/2/c/fc55817d7da34bdc8365048dec2.html" title="Family of Musungu Musungu, Joseph and Ndakala Ndakala, Selpha">
+							Family of Musungu Musungu, Joseph and Ndakala Ndakala, Selpha
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/0/c/fc54af7c1f116ab3ab8c5e9ccc0.html">Ominde Musungu, Nathan</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/3/7/fc54a6577b23a2748bbdc53373.html" title="Family of Ominde Musungu, Nathan and Dindi Ominde, Catherine">
+							Family of Ominde Musungu, Nathan and Dindi Ominde, Catherine
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/f/a/fc557f0dcec5ea7f7653648b5af.html">Ominde Musungu, billy</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/b/3/fc55876fde64701bad603e3e43b.html" title="Family of Ominde Musungu, billy and Manyasa Akwera, Razia">
+							Family of Ominde Musungu, billy and Manyasa Akwera, Razia
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="N" name="N" title="Families beginning with letter N">
+							N
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/2/b/fc5581c8b0e2ae1669d9dfaf3b2.html">Ndakala Ndakala, Selpha</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/2/c/fc55817d7da34bdc8365048dec2.html" title="Family of Musungu Musungu, Joseph and Ndakala Ndakala, Selpha">
+							Family of Musungu Musungu, Joseph and Ndakala Ndakala, Selpha
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/4/a/fc557f924c663081c79a1d824a4.html">Ominde Ndakala, Slyvia</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/8/6/fc55868cf751eb130e20958268.html" title="Family of Baba lyon, Lazarus and Ominde Ndakala, Slyvia">
+							Family of Baba lyon, Lazarus and Ominde Ndakala, Slyvia
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/0/6/fc558574aa86949a6f7b3e71260.html">Newtons Mum, Everlyn</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/d/6/fc5585339177cdc004e8fe1e96d.html" title="Family of Julia Dindi, John and Newtons Mum, Everlyn">
+							Family of Julia Dindi, John and Newtons Mum, Everlyn
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="O" name="O" title="Families beginning with letter O">
+							O
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/6/8/fc54ae8add438f44c0353ca3b86.html">Dindi Ominde, Catherine</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/3/7/fc54a6577b23a2748bbdc53373.html" title="Family of Ominde Musungu, Nathan and Dindi Ominde, Catherine">
+							Family of Ominde Musungu, Nathan and Dindi Ominde, Catherine
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="V" name="V" title="Families beginning with letter V">
+							V
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/6/a/fc55842b6ac359347e3eaa6fea6.html">Andrew Veronica, Veronica</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/9/7/fc5583b5cf842ee24944d74d379.html" title="Family of Dindi Dindi, Veros Husband and Andrew Veronica, Veronica">
+							Family of Dindi Dindi, Veros Husband and Andrew Veronica, Veronica
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+						&nbsp;
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/4/3/fc55b87cfaa18bf56b76ab62834.html" title="Family of Andrew Veronica, Veronica">
+							Family of Andrew Veronica, Veronica
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+						&nbsp;
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/f/3/fc55bafa7516aa6c2f2f880163f.html" title="Family of Andrew Veronica, Veronica">
+							Family of Andrew Veronica, Veronica
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/b/d/fc5594f07b3774e3db5add83cdb.html">Andrea Veros Dad, Andrea</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/4/5/fc559495a9d4d62150f794a6454.html" title="Family of Andrea Veros Dad, Andrea and Veros Mum, Maria">
+							Family of Andrea Veros Dad, Andrea and Veros Mum, Maria
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class ="BeginFamily">
+						<td class="ColumnRowLabel">
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/0/c/fc55949ee434fd0afc9af7bb2c0.html">Veros Mum, Maria</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/4/5/fc559495a9d4d62150f794a6454.html" title="Family of Andrea Veros Dad, Andrea and Veros Mum, Maria">
+							Family of Andrea Veros Dad, Andrea and Veros Mum, Maria
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+					<tr class="BeginLetter BeginFamily">
+						<td class="ColumnRowLabel">
+							<a id="W" name="W" title="Families beginning with letter W">
+							W
+							</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="ppl/3/c/fc559441f75293b0338f70e4ec3.html">Wambia, Wambia</a>
+						</td>
+						<td class="ColumnPartner">
+							<a href="fam/5/d/fc55933453e18f4cc518decafd5.html" title="Family of Wambia, Wambia and Akombe, Akombe">
+							Family of Wambia, Wambia and Akombe, Akombe
+							
+							</a>
+						</td>
+						<td class="ColumnDate">&nbsp;</td>
+						<td class="ColumnDate">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="fullclear"></div>
+		<div id="footer">
+			<p id="createdate">
+			Generated by <a href="http://gramps-project.org/">Gramps</a> AIO64-5.2.3-r1-aa03f5a<br />Last change was the 2024-12-12 23:21:07
+			</p>
+			<p id="copyright">
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License - By attribution, Non-commercial" title="Creative Commons License - By attribution, Non-commercial" src="images/somerights20.gif" /></a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
