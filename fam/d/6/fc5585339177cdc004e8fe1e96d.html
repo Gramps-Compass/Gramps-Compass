@@ -55,7 +55,6 @@ function toggleContent(elem, icon) {
 					<li><a href="../../../events.html" title="Events">Events</a></li>
 					<li><a href="../../../places.html" title="Places">Places</a></li>
 					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
-					<li><a href="../../../statistics.html" title="Statistics">Statistics</a></li>
 					<li><a href="../../../cal/2024/index.html" title="Web Calendar">Web Calendar</a></li>
 					<li><a onclick="history.go(-1);">Previous</a></li>
 					<li><a onclick="history.go(+1);">Next</a></li>
@@ -134,12 +133,25 @@ function GoToTop() {
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td /><a href="../../../ppl/0/8/fc5585d884617c66b81b6c4c780.html">Dindi Dindi, Newton</a><td></td><td></td></tr>
-								<tr><td /><a href="../../../ppl/e/9/fc5586036e9731d548cb7de989e.html">Dindi Dindi, Rocky</a><td></td><td></td></tr>
+								<tr><td /><a href="../../../ppl/0/8/fc5585d884617c66b81b6c4c780.html">Dindi, Newton</a><td></td><td></td></tr>
+								<tr><td /><a href="../../../ppl/e/9/fc5586036e9731d548cb7de989e.html">Dindi, Rocky</a><td></td><td></td></tr>
 							</tbody>
 						</table>
 					</tr>
 				</table>
+			</div>
+			<h4 onclick="toggleContent('toggle_map', 'icon_map');">
+				<button class="icon" id="icon_map">
+					<svg class="triangle" viewBox="0 0 100 100">
+						<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+						</polygon>
+					</svg>
+				</button>
+			Family Map
+			</h4>
+			<div id="toggle_map" style="display:none">
+				<br />
+					<br />
 			</div>
 		</div>
 		<div class="fullclear"></div>
