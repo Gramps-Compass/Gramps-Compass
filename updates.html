@@ -22,6 +22,23 @@
 	<link href="css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
 	<link href="css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+
+<script type="text/javascript">
+function toggleContent(elem, icon) {
+  // Get the DOM reference
+  var contentId = document.getElementById(elem);
+  var icon = document.getElementById(icon);
+  // Toggle
+  if (contentId.style.display == "block") {
+    contentId.style.display = "none";
+    icon.className = 'icon icon-close';
+  } else {
+    contentId.style.display = "block";
+    icon.className = 'icon icon-open';
+  };
+}
+</script>
+
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -35,6 +52,8 @@
 					<li><a href="individuals.html" title="Individuals">Individuals</a></li>
 					<li><a href="index.html" title="Surnames">Surnames</a></li>
 					<li class = "CurrentSection"><a href="updates.html" title="Updates">Updates</a></li>
+					<li><a onclick="history.go(-1);">Previous</a></li>
+					<li><a onclick="history.go(+1);">Next</a></li>
 				</ul>
 			</div>
 		</div>
@@ -79,10 +98,10 @@ function GoToTop() {
 			<table class="list" id="list">
 				<tr>
 					<td class="date">
-					2024-12-12 9:29:17 PM
+					2024-12-12 9:59:57 PM
 					</td>
 					<td>
-						<a href="ppl/6/a/fc55842b6ac359347e3eaa6fea6.html">Andrea, Veronica</a>
+						<a href="ppl/c/a/fc558691fb25409228837dfbeac.html">Baba lyon, Lazarus</a>
 					</td>
 				</tr>
 			</table>

@@ -22,6 +22,23 @@
 	<link href="css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
 	<link href="css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+
+<script type="text/javascript">
+function toggleContent(elem, icon) {
+  // Get the DOM reference
+  var contentId = document.getElementById(elem);
+  var icon = document.getElementById(icon);
+  // Toggle
+  if (contentId.style.display == "block") {
+    contentId.style.display = "none";
+    icon.className = 'icon icon-close';
+  } else {
+    contentId.style.display = "block";
+    icon.className = 'icon icon-open';
+  };
+}
+</script>
+
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -35,6 +52,8 @@
 					<li><a href="individuals.html" title="Individuals">Individuals</a></li>
 					<li class = "CurrentSection"><a href="index.html" title="Surnames">Surnames</a></li>
 					<li><a href="updates.html" title="Updates">Updates</a></li>
+					<li><a onclick="history.go(-1);">Previous</a></li>
+					<li><a onclick="history.go(+1);">Next</a></li>
 				</ul>
 			</div>
 		</div>
@@ -77,6 +96,7 @@ function GoToTop() {
 				<ul class="ltr">
 					<li><a href="#…" title="Alphabet Menu: …">…</a></li>
 					<li><a href="#A" title="Alphabet Menu: A">A</a></li>
+					<li><a href="#B" title="Alphabet Menu: B">B</a></li>
 					<li><a href="#D" title="Alphabet Menu: D">D</a></li>
 					<li><a href="#M" title="Alphabet Menu: M">M</a></li>
 					<li><a href="#N" title="Alphabet Menu: N">N</a></li>
@@ -108,6 +128,11 @@ function GoToTop() {
 					<tr>
 						<td class="ColumnLetter"></td>
 						<td class="ColumnSurname"><a href="srn/b/1/a07a17d1840e10431a562b8da7c5271b.html" title="Ashioya starting with LATIN CAPITAL LETTER A">Ashioya</a></td>
+						<td class="ColumnQuantity">1</td>
+					</tr>
+					<tr class = "BeginLetter">
+						<td class="ColumnLetter"><a id="B" name="B" title="Surnames beginning with letter 'B' LATIN CAPITAL LETTER B">B</a></td>
+						<td class="ColumnSurname"><a href="srn/3/9/bf970fd9c678e11dc4b82e71ce307193.html" title="Baba lyon starting with LATIN CAPITAL LETTER B">Baba lyon</a></td>
 						<td class="ColumnQuantity">1</td>
 					</tr>
 					<tr class = "BeginLetter">
@@ -153,7 +178,7 @@ function GoToTop() {
 					<tr class = "BeginLetter">
 						<td class="ColumnLetter"><a id="S" name="S" title="Surnames beginning with letter 'S' LATIN CAPITAL LETTER S">S</a></td>
 						<td class="ColumnSurname"><a href="srn/b/7/0d053ae3b98bcdeb26961ece45ed2b7b.html" title="Slys Husband starting with LATIN CAPITAL LETTER S">Slys Husband</a></td>
-						<td class="ColumnQuantity">3</td>
+						<td class="ColumnQuantity">2</td>
 					</tr>
 					<tr>
 						<td class="ColumnLetter"></td>

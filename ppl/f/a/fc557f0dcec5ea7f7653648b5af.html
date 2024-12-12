@@ -22,6 +22,23 @@
 	<link href="../../../css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
 	<link href="../../../css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+
+<script type="text/javascript">
+function toggleContent(elem, icon) {
+  // Get the DOM reference
+  var contentId = document.getElementById(elem);
+  var icon = document.getElementById(icon);
+  // Toggle
+  if (contentId.style.display == "block") {
+    contentId.style.display = "none";
+    icon.className = 'icon icon-close';
+  } else {
+    contentId.style.display = "block";
+    icon.className = 'icon icon-open';
+  };
+}
+</script>
+
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -35,6 +52,8 @@
 					<li class = "CurrentSection"><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
 					<li><a href="../../../index.html" title="Surnames">Surnames</a></li>
 					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
+					<li><a onclick="history.go(-1);">Previous</a></li>
+					<li><a onclick="history.go(+1);">Next</a></li>
 				</ul>
 			</div>
 		</div>
@@ -89,11 +108,23 @@ function GoToTop() {
 						<td class="ColumnAttribute">Gender</td>
 						<td class="ColumnValue">male</td>
 					</tr>
+					<tr>
+						<td class="ColumnAttribute">Birth date</td>
+						<td class="ColumnValue">1994-06-30</td>
+					</tr>
 				</table>
 			</div>
 			<div class="subsection" id="events">
-				<h4>Events</h4>
-				<table class="infolist eventlist toggle_event ltr" id="toggle_event" style="display:block">
+				<h4 onclick="toggleContent('toggle_event', 'icon_event');">
+					<button class="icon" id="icon_event">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Events
+				</h4>
+				<table class="infolist eventlist toggle_event ltr" id="toggle_event" style="display:none">
 					<thead>
 						<tr>
 							<th class="ColumnEvent">Event</th>
@@ -125,8 +156,16 @@ function GoToTop() {
 				</table>
 			</div>
 			<div class="subsection" id="parents">
-				<h4>Parents</h4>
-				<table class="infolist toggle_parent ltr" id="toggle_parent" style="display:block">
+				<h4 onclick="toggleContent('toggle_parent', 'icon_parent');">
+					<button class="icon" id="icon_parent">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Parents
+				</h4>
+				<table class="infolist toggle_parent ltr" id="toggle_parent" style="display:none">
 					<thead>
 						<tr>
 							<th class="ColumnAttribute">Relation to main person</th>
@@ -184,8 +223,16 @@ function GoToTop() {
 				</table>
 			</div>
 			<div class="subsection" id="families">
-				<h4>Families</h4>
-				<table class="infolist" id="toggle_families" style="display:block">
+				<h4 onclick="toggleContent('toggle_families', 'icon_families');">
+					<button class="icon" id="icon_families">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Families
+				</h4>
+				<table class="infolist" id="toggle_families" style="display:none">
 					<tr class="BeginFamily">
 						<td class="ColumnValue" colspan="3"><H4 class="subsection"><a href="" title="Family of Ominde Musungu, billy and Manyasa, Razia">Family of Ominde Musungu, billy and Manyasa, Razia</a></H4></td>
 					</tr>
@@ -220,8 +267,16 @@ function GoToTop() {
 				</table>
 			</div>
 			<div class="subsection" id="attributes">
-				<h4>Attributes</h4>
-				<table class="infolist attrlist" id="toggle_attr" style="display:block">
+				<h4 onclick="toggleContent('toggle_attr', 'icon_attr');">
+					<button class="icon" id="icon_attr">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Attributes
+				</h4>
+				<table class="infolist attrlist" id="toggle_attr" style="display:none">
 					<thead>
 						<tr>
 							<th class="ColumnType">Type</th>
@@ -241,8 +296,16 @@ function GoToTop() {
 				</table>
 			</div>
 			<div class="subsection" id="pedigree">
-				<h4>Pedigree</h4>
-				<ol class="pedigreegen" id="toggle_pedigree" style="display:block">
+				<h4 onclick="toggleContent('toggle_pedigree', 'icon_pedigree');">
+					<button class="icon" id="icon_pedigree">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Pedigree
+				</h4>
+				<ol class="pedigreegen" id="toggle_pedigree" style="display:none">
 					<li>
 						<a href="../../../ppl/0/c/fc54af7c1f116ab3ab8c5e9ccc0.html">Ominde Musungu, Nathan</a>
 						<ol>
@@ -281,9 +344,17 @@ function GoToTop() {
 				</ol>
 			</div>
 			<div class="subsection" id="tree">
-				<h4>Ancestors</h4>
-				<div class="tree" id="toggle_anc" style="display:block">
-					<div id="treeContainer" style="width:1234px; height:825px; top: 0px">
+				<h4 onclick="toggleContent('toggle_anc', 'icon_anc');">
+					<button class="icon" id="icon_anc">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Ancestors
+				</h4>
+				<div class="tree" id="toggle_anc" style="display:none">
+					<div id="treeContainer" style="width:1254px; height:825px; top: 0px">
 						<div class="boxbg male AncCol0" style="top: 267px; left: 6px;">
 							<a class="noThumb" href="../../../ppl/f/a/fc557f0dcec5ea7f7653648b5af.html">
 							Ominde Musungu, billy<br>*1994-06-30<br>+...

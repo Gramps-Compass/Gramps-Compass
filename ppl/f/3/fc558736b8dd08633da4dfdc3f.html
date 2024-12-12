@@ -22,6 +22,23 @@
 	<link href="../../../css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
 	<link href="../../../css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+
+<script type="text/javascript">
+function toggleContent(elem, icon) {
+  // Get the DOM reference
+  var contentId = document.getElementById(elem);
+  var icon = document.getElementById(icon);
+  // Toggle
+  if (contentId.style.display == "block") {
+    contentId.style.display = "none";
+    icon.className = 'icon icon-close';
+  } else {
+    contentId.style.display = "block";
+    icon.className = 'icon icon-open';
+  };
+}
+</script>
+
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -35,6 +52,8 @@
 					<li class = "CurrentSection"><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
 					<li><a href="../../../index.html" title="Surnames">Surnames</a></li>
 					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
+					<li><a onclick="history.go(-1);">Previous</a></li>
+					<li><a onclick="history.go(+1);">Next</a></li>
 				</ul>
 			</div>
 		</div>
@@ -86,8 +105,16 @@ function GoToTop() {
 				</table>
 			</div>
 			<div class="subsection" id="parents">
-				<h4>Parents</h4>
-				<table class="infolist toggle_parent ltr" id="toggle_parent" style="display:block">
+				<h4 onclick="toggleContent('toggle_parent', 'icon_parent');">
+					<button class="icon" id="icon_parent">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Parents
+				</h4>
+				<table class="infolist toggle_parent ltr" id="toggle_parent" style="display:none">
 					<thead>
 						<tr>
 							<th class="ColumnAttribute">Relation to main person</th>
@@ -100,7 +127,7 @@ function GoToTop() {
 					<tbody>
 						<tr>
 							<td class="ColumnAttribute">Father</td>
-							<td class="ColumnValue" /><a href="../../../ppl/c/a/fc558691fb25409228837dfbeac.html">Slys Husband, Lazarus</a><td class="ColumnDate" /><td class="ColumnDate" />
+							<td class="ColumnValue" /><a href="../../../ppl/c/a/fc558691fb25409228837dfbeac.html">Baba lyon, Lazarus</a><td class="ColumnDate" /><td class="ColumnDate" />
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">Mother</td>
@@ -124,10 +151,18 @@ function GoToTop() {
 				</table>
 			</div>
 			<div class="subsection" id="pedigree">
-				<h4>Pedigree</h4>
-				<ol class="pedigreegen" id="toggle_pedigree" style="display:block">
+				<h4 onclick="toggleContent('toggle_pedigree', 'icon_pedigree');">
+					<button class="icon" id="icon_pedigree">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Pedigree
+				</h4>
+				<ol class="pedigreegen" id="toggle_pedigree" style="display:none">
 					<li>
-						<a href="../../../ppl/c/a/fc558691fb25409228837dfbeac.html">Slys Husband, Lazarus</a>
+						<a href="../../../ppl/c/a/fc558691fb25409228837dfbeac.html">Baba lyon, Lazarus</a>
 						<ol>
 							<li class="spouse">
 								<a href="../../../ppl/4/a/fc557f924c663081c79a1d824a4.html">Ominde Ndakala, Slyvia</a>
@@ -145,9 +180,17 @@ function GoToTop() {
 				</ol>
 			</div>
 			<div class="subsection" id="tree">
-				<h4>Ancestors</h4>
-				<div class="tree" id="toggle_anc" style="display:block">
-					<div id="treeContainer" style="width:1234px; height:600px; top: 75px">
+				<h4 onclick="toggleContent('toggle_anc', 'icon_anc');">
+					<button class="icon" id="icon_anc">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Ancestors
+				</h4>
+				<div class="tree" id="toggle_anc" style="display:none">
+					<div id="treeContainer" style="width:1564px; height:825px; top: 112px">
 						<div class="boxbg female AncCol0" style="top: 80px; left: 6px;">
 							<a class="noThumb" href="../../../ppl/f/3/fc558736b8dd08633da4dfdc3f.html">
 							Slys Husband, Etyn<br>*<br>+...
@@ -158,7 +201,7 @@ function GoToTop() {
 						<div class="gvline" style="top: 105px; left: 285px; width: 20px"></div>
 						<div class="boxbg male AncCol1" style="top: 5px; left: 316px;">
 							<a class="noThumb" href="../../../ppl/c/a/fc558691fb25409228837dfbeac.html">
-							Slys Husband, Lazarus<br>*<br>+...
+							Baba lyon, Lazarus<br>*<br>+...
 							</a>
 						</div>
 						<div class="shadow" style="top: 10px; left: 320px;"></div>
@@ -178,69 +221,125 @@ function GoToTop() {
 					
 						<div class="bvline" style="top: 175px; left: 595px; width: 15px"></div>
 						<div class="gvline" style="top: 180px; left: 595px; width: 20px"></div>
-						<div class="boxbg male AncCol2" style="top: 5px; left: 626px;">
+						<div class="boxbg male AncCol2" style="top: -32px; left: 626px;">
 							<a class="noThumb" href="../../../ppl/0/c/fc54af7c1f116ab3ab8c5e9ccc0.html">
 							Ominde Musungu, Nathan<br>*<br>+...
 							</a>
 						</div>
-						<div class="shadow" style="top: 10px; left: 630px;"></div>
-						<div class="bvline" style="top: 25px; left: 610px; width: 15px;"></div>
+						<div class="shadow" style="top: -27px; left: 630px;"></div>
+						<div class="bvline" style="top: -12px; left: 610px; width: 15px;"></div>
 					
-						<div class="bhline" style="top: 25px; left: 610px; height: 151px;"></div>
+						<div class="bhline" style="top: -12px; left: 610px; height: 188px;"></div>
 					
-						<div class="bvline" style="top: 25px; left: 905px; width: 15px"></div>
-						<div class="gvline" style="top: 30px; left: 905px; width: 20px"></div>
-						<div class="boxbg male AncCol3" style="top: -70px; left: 936px;">
+						<div class="bvline" style="top: -12px; left: 905px; width: 15px"></div>
+						<div class="gvline" style="top: -7px; left: 905px; width: 20px"></div>
+						<div class="boxbg male AncCol3" style="top: -107px; left: 936px;">
 							<a class="noThumb" href="../../../ppl/5/3/fc55818632820ce89cf8000aa35.html">
 							Musungu Musungu, Joseph<br>*<br>+...
 							</a>
 						</div>
-						<div class="shadow" style="top: -65px; left: 940px;"></div>
-						<div class="bvline" style="top: -50px; left: 920px; width: 15px;"></div>
+						<div class="shadow" style="top: -102px; left: 940px;"></div>
+						<div class="bvline" style="top: -87px; left: 920px; width: 15px;"></div>
 					
-						<div class="bhline" style="top: -50px; left: 920px; height: 76px;"></div>
+						<div class="bhline" style="top: -87px; left: 920px; height: 76px;"></div>
 					
-						<div class="boxbg female AncCol3" style="top: 80px; left: 936px;">
+						<div class="bvline" style="top: -87px; left: 1215px; width: 15px"></div>
+						<div class="gvline" style="top: -82px; left: 1215px; width: 20px"></div>
+						<div class="boxbg female AncCol4" style="top: -107px; left: 1246px;">
+							<a class="noThumb" href="../../../ppl/d/9/fc55927ad1fb00108928ae6a9d.html">
+							, Mukoma<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: -102px; left: 1250px;"></div>
+						<div class="bvline" style="top: -87px; left: 1230px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: -87px; left: 1230px; height: 1px;"></div>
+					
+						<div class="boxbg female AncCol3" style="top: 42px; left: 936px;">
 							<a class="noThumb" href="../../../ppl/2/b/fc5581c8b0e2ae1669d9dfaf3b2.html">
 							Ndakala Ndakala, Selpha<br>*<br>+...
 							</a>
 						</div>
-						<div class="shadow" style="top: 85px; left: 940px;"></div>
-						<div class="bvline" style="top: 100px; left: 920px; width: 15px;"></div>
+						<div class="shadow" style="top: 47px; left: 940px;"></div>
+						<div class="bvline" style="top: 62px; left: 920px; width: 15px;"></div>
 					
-						<div class="bhline" style="top: 25px; left: 920px; height: 76px;"></div>
+						<div class="bhline" style="top: -12px; left: 920px; height: 76px;"></div>
 					
-						<div class="boxbg female AncCol2" style="top: 305px; left: 626px;">
+						<div class="boxbg female AncCol2" style="top: 342px; left: 626px;">
 							<a class="noThumb" href="../../../ppl/6/8/fc54ae8add438f44c0353ca3b86.html">
 							Dindi Ominde, Catherine<br>*<br>+...
 							</a>
 						</div>
-						<div class="shadow" style="top: 310px; left: 630px;"></div>
-						<div class="bvline" style="top: 325px; left: 610px; width: 15px;"></div>
+						<div class="shadow" style="top: 347px; left: 630px;"></div>
+						<div class="bvline" style="top: 362px; left: 610px; width: 15px;"></div>
 					
-						<div class="bhline" style="top: 175px; left: 610px; height: 151px;"></div>
+						<div class="bhline" style="top: 175px; left: 610px; height: 188px;"></div>
 					
-						<div class="bvline" style="top: 325px; left: 905px; width: 15px"></div>
-						<div class="gvline" style="top: 330px; left: 905px; width: 20px"></div>
-						<div class="boxbg male AncCol3" style="top: 230px; left: 936px;">
+						<div class="bvline" style="top: 362px; left: 905px; width: 15px"></div>
+						<div class="gvline" style="top: 367px; left: 905px; width: 20px"></div>
+						<div class="boxbg male AncCol3" style="top: 192px; left: 936px;">
 							<a class="noThumb" href="../../../ppl/e/a/fc5583baeda1d7c6c4a1f3896ae.html">
 							Dindi, Mums Dad<br>*<br>+...
 							</a>
 						</div>
-						<div class="shadow" style="top: 235px; left: 940px;"></div>
-						<div class="bvline" style="top: 250px; left: 920px; width: 15px;"></div>
+						<div class="shadow" style="top: 197px; left: 940px;"></div>
+						<div class="bvline" style="top: 212px; left: 920px; width: 15px;"></div>
 					
-						<div class="bhline" style="top: 250px; left: 920px; height: 76px;"></div>
+						<div class="bhline" style="top: 212px; left: 920px; height: 151px;"></div>
 					
-						<div class="boxbg female AncCol3" style="top: 380px; left: 936px;">
+						<div class="bvline" style="top: 212px; left: 1215px; width: 15px"></div>
+						<div class="gvline" style="top: 217px; left: 1215px; width: 20px"></div>
+						<div class="boxbg male AncCol4" style="top: 117px; left: 1246px;">
+							<a class="noThumb" href="../../../ppl/3/c/fc559441f75293b0338f70e4ec3.html">
+							Wambia, Wambia<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 122px; left: 1250px;"></div>
+						<div class="bvline" style="top: 137px; left: 1230px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 137px; left: 1230px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol4" style="top: 267px; left: 1246px;">
+							<a class="noThumb" href="../../../ppl/f/1/fc55937ce1219cc94f00517141f.html">
+							Akombe, Akombe<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 272px; left: 1250px;"></div>
+						<div class="bvline" style="top: 287px; left: 1230px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 212px; left: 1230px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol3" style="top: 492px; left: 936px;">
 							<a class="noThumb" href="../../../ppl/6/a/fc55842b6ac359347e3eaa6fea6.html">
 							Andrea, Veronica<br>*<br>+...
 							</a>
 						</div>
-						<div class="shadow" style="top: 385px; left: 940px;"></div>
-						<div class="bvline" style="top: 400px; left: 920px; width: 15px;"></div>
+						<div class="shadow" style="top: 497px; left: 940px;"></div>
+						<div class="bvline" style="top: 512px; left: 920px; width: 15px;"></div>
 					
-						<div class="bhline" style="top: 325px; left: 920px; height: 76px;"></div>
+						<div class="bhline" style="top: 362px; left: 920px; height: 151px;"></div>
+					
+						<div class="bvline" style="top: 512px; left: 1215px; width: 15px"></div>
+						<div class="gvline" style="top: 517px; left: 1215px; width: 20px"></div>
+						<div class="boxbg male AncCol4" style="top: 417px; left: 1246px;">
+							<a class="noThumb" href="../../../ppl/b/d/fc5594f07b3774e3db5add83cdb.html">
+							Andrea Veros Dad, Andrea<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 422px; left: 1250px;"></div>
+						<div class="bvline" style="top: 437px; left: 1230px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 437px; left: 1230px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol4" style="top: 567px; left: 1246px;">
+							<a class="noThumb" href="../../../ppl/0/c/fc55949ee434fd0afc9af7bb2c0.html">
+							Veros Mum, Maria<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 572px; left: 1250px;"></div>
+						<div class="bvline" style="top: 587px; left: 1230px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 512px; left: 1230px; height: 76px;"></div>
 					
 					</div>
 				</div>
